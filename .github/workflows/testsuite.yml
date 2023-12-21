@@ -1,5 +1,5 @@
 name: TestSuite
-run-name: Run TestSuite by @${{ github.actor }}, before deploying to ${{ inputs.deploy_target }}
+run-name: Run TestSuite by @${{ github.actor }} before deploying to ${{ inputs.deploy_target }}
 on:
   pull_request:
     branches:
@@ -33,6 +33,9 @@ jobs:
           cp .env.ci .env
           php artisan key:generate
           php artisan migrate:fresh --seed
+
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       - name: Install front-end dependencies
         run: |
