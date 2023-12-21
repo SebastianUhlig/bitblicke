@@ -50,27 +50,23 @@
 
             <ul class="mt-12 flex justify-center gap-6 md:gap-8">
                 <li>
-                    <a
+                    <x-html-tags.link
                         href="https://www.instagram.com/bastisleeps/"
                         rel="noreferrer"
-                        target="_blank"
-                        class="text-gray-700 transition hover:text-primary-500 dark:text-white dark:hover:text-primary-500"
-                    >
+                        target="_blank">
                         <span class="sr-only">Instagram</span>
                         @svg('fab-instagram', ['class' => 'w-8 h-8'])
-                    </a>
+                    </x-html-tags.link>
                 </li>
 
                 <li>
-                    <a
+                    <x-html-tags.link
                         href="https://github.com/sebastianUhlig/"
                         rel="noreferrer"
-                        target="_blank"
-                        class="text-gray-700 transition hover:text-primary-500 dark:text-white dark:hover:text-primary-500"
-                    >
+                        target="_blank">
                         <span class="sr-only">GitHub</span>
                         @svg('fab-github', ['class' => 'w-8 h-8'])
-                    </a>
+                    </x-html-tags.link>
                 </li>
             </ul>
         </div>
