@@ -1,5 +1,5 @@
 name: TestSuite
-run-name: Run TestSuite by @${{ github.actor }} before deploying to ${{ inputs.deploy_target }}
+run-name: Running TestSuite
 on:
   pull_request:
     branches:
