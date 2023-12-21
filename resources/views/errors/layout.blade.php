@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ $page->meta_title }} - {{ config('app.name') }}</title>
-        <meta name="description" content="{{ $page->meta_description }}">
+        <title>@yield('title') - {{ config('app.name') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,24 +12,25 @@
 
         @vite(['resources/css/app.scss', 'resources/js/app.js'])
     </head>
-
     <body x-cloak
           x-data="{ theme: localStorage.getItem('theme') || localStorage.setItem('theme', 'system') }"
           x-init="$watch('theme', val => localStorage.setItem('theme', val))"
           x-bind:class="{'dark': theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
           class="antialiased">
         <div class="bg-gray-100 dark:bg-[#02174c] selection:bg-primary-500 selection:text-white text-gray-900 dark:text-gray-200">
-            <div class="relative z-20 bg-gray-100 dark:bg-black/70 min-h-[calc(100vh-342px)]">
-                <livewire:topbar></livewire:topbar>
+            <div class="relative z-20 bg-gray-100 dark:bg-black/70 min-h-screen grid place-content-center p-4">
+                <x-logo class="mb-8 text-center"></x-logo>
 
-                <livewire:navigation :logo="true" position="header"></livewire:navigation>
+                <x-html-tags.h1 class="mb-8 text-center">@yield('title')</x-html-tags.h1>
 
-                <div class="relative">
-                    {{ $slot }}
-                </div>
+                <p class="mb-8">
+                    @yield('message')
+                </p>
+
+                <x-html-tags.alert title="Hast Du Fragen oder Probleme?" type="neutral">
+                    Du kannst dich jederzeit bei mir an <x-html-tags.link href="mailto:sebastian@bitblicke.de">sebastian@bitblicke.de</x-html-tags.link> wenden.
+                </x-html-tags.alert>
             </div>
-
-            <livewire:navigation :logo="true" position="footer"></livewire:navigation>
         </div>
     </body>
 </html>
