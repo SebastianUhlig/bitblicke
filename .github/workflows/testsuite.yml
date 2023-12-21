@@ -1,4 +1,5 @@
-name: CI
+name: TestSuite
+run-name: Run TestSuite by @${{ github.actor }}, before deploying to ${{ inputs.deploy_target }}
 on:
   pull_request:
     branches:
@@ -39,5 +40,5 @@ jobs:
           npm install
           npm run build
 
-      - name: Run Testsuite
+      - name: Run TestSuite
         run: vendor/bin/phpunit tests/
