@@ -1,6 +1,6 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-dd702f87.css",
+    "file": "assets/app-f68e7af6.css",
     "isEntry": true,
     "src": "resources/css/app.scss"
   },
@@ -17,7 +17,7 @@
     "src": "resources/fonts/poppins/Poppins-Regular.ttf"
   },
   "resources/js/app.js": {
-    "file": "assets/app-8a65ddc1.js",
+    "file": "assets/app-03ea85b9.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
