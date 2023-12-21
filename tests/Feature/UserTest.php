@@ -10,14 +10,14 @@ class UserTest extends TestCase
 {
     public function test_show_login_view(): void
     {
-        $response = $this->get('/admin/login');
+        $response = $this->get('/app/login');
 
         $response->assertStatus(200);
     }
 
     public function test_show_register_view(): void
     {
-        $response = $this->get('/admin/register');
+        $response = $this->get('/app/register');
 
         $response->assertStatus(200);
     }
