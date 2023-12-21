@@ -1,9 +1,9 @@
 <p align="center">
-<img src="docs/logo.png" alt="bitblicke Logo" style="outline: 2px dashed rgb(132, 204, 22); outline-offset: 2px;">
+<img src="docs/logo.png" alt="bitblicke Logo">
 </p>
 
 <p align="center">
-[![Latest CI Status](https://github.com/sebastianuhlig/bitblicke/workflows/CI/badge.svg)](https://github.com/sebastianuhlig/bitblicke/actions)
+<a href="https://github.com/sebastianuhlig/bitblicke/actions"><img src="https://github.com/sebastianuhlig/bitblicke/workflows/CI/badge.svg" alt="Latest CI Status"></a>
 </p>
 
 ## About bitblicke
