@@ -29,6 +29,7 @@ jobs:
         run: |
           cp .env.ci .env
           php artisan key:generate
+          php artisan migrate:fresh --seed
 
       - name: Install front-end dependencies
         run: |
@@ -37,6 +38,3 @@ jobs:
 
       - name: Run Testsuite
         run: vendor/bin/phpunit tests/
-
-      - name: Deploy to Laravel Forge
-        run: curl ${{ secrets.FORGE_DEPLOYMENT_WEBHOOK }}
