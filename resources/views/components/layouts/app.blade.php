@@ -20,7 +20,7 @@
           x-bind:class="{'dark': theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
           class="antialiased">
         <div class="bg-gray-100 dark:bg-[#02174c] selection:bg-primary-500 selection:text-white text-gray-900 dark:text-gray-200">
-            <div class="relative z-20 bg-gray-100 dark:bg-black/70">
+            <div class="relative z-20 bg-gray-100 dark:bg-black/70 min-h-[calc(100vh-342px)]">
                 <livewire:topbar></livewire:topbar>
 
                 <livewire:navigation :logo="true" position="header"></livewire:navigation>
