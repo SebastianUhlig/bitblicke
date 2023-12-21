@@ -34,7 +34,7 @@ class AdminPanelProvider extends PanelProvider
                 'danger' => Color::Rose,
                 'gray' => Color::Gray,
                 'info' => Color::Blue,
-                'primary' => '#ff4136',
+                'primary' => Color::Lime,
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
             ])
@@ -74,6 +74,9 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
                 AdminAuthenticate::class,
-            ]);
+            ])
+            ->brandLogoHeight('2rem')
+            ->brandLogo(fn() => view('components.filament-logo'))
+            ->brandName('bitblicke');
     }
 }

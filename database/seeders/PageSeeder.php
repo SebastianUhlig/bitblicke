@@ -13,69 +13,58 @@ class PageSeeder extends Seeder
     public function run(): void
     {
         Page::factory()->create([
-            'meta_title' => 'Home Page',
+            'meta_title' => 'Startseite',
             'slug' => '/',
-            'header_nav_title' => 'Home Page',
-            'footer_nav_title' => 'Home Page',
+            'header_nav_title' => 'Startseite',
+            'footer_nav_title' => 'Startseite',
             'header_nav_active' => true,
-            'h1' => 'Home Page',
-            'subtitle' => 'A simple and nice Home Page',
+            'h1' => 'Startseite',
+            'subtitle' => 'Startseite',
             'online' => true,
             'locked' => true,
         ]);
 
-        Page::factory()->create([
-            'meta_title' => 'Second Page',
-            'slug' => 'second-page',
-            'header_nav_title' => 'Second Page',
-            'footer_nav_title' => 'Second Page',
-            'header_nav_active' => true,
-            'h1' => 'Second Page',
-            'subtitle' => 'A simple and nice Second Page',
-            'online' => true,
-        ]);
-
         $parent_page = Page::factory()->create([
-            'meta_title' => 'Third Page',
-            'slug' => 'third-page',
-            'header_nav_title' => 'Third Page',
-            'footer_nav_title' => 'Third Page',
+            'meta_title' => 'Unterseite',
+            'slug' => 'unterseite',
+            'header_nav_title' => 'Unterseite',
+            'footer_nav_title' => 'Unterseite',
             'header_nav_active' => true,
-            'h1' => 'Third Page',
-            'subtitle' => 'A simple and nice Third Page',
+            'h1' => 'Unterseite',
+            'subtitle' => 'Unterseite',
             'online' => true,
         ]);
 
             Page::factory()->create([
                 'parent_page_id' => $parent_page->id,
-                'meta_title' => 'Sub Page 1',
-                'slug' => 'sub-page-1',
-                'header_nav_title' => 'Sub Page 1',
-                'footer_nav_title' => 'Sub Page 1',
+                'meta_title' => 'Untermenü 1',
+                'slug' => 'untermenue-1',
+                'header_nav_title' => 'Untermenü 1',
+                'footer_nav_title' => 'Untermenü 1',
                 'header_nav_active' => true,
-                'h1' => 'Sub Page 1',
-                'subtitle' => 'A simple and nice Sub Page 1',
+                'h1' => 'Untermenü 1',
+                'subtitle' => 'Untermenü 1',
                 'online' => true,
             ]);
 
             Page::factory()->create([
                 'parent_page_id' => $parent_page->id,
-                'meta_title' => 'Sub Page 2',
-                'slug' => 'sub-page-2',
-                'header_nav_title' => 'Sub Page 2',
-                'h1' => 'Sub Page 2',
-                'subtitle' => 'A simple and nice Sub Page 2',
+                'meta_title' => 'Untermenü 2',
+                'slug' => 'untermenue-2',
+                'header_nav_title' => 'Untermenü 2',
+                'h1' => 'Untermenü 2',
+                'subtitle' => 'Untermenü 2',
                 'online' => true,
             ]);
 
         Page::factory()->create([
-            'meta_title' => 'Footer Page',
-            'slug' => 'footer-page',
-            'header_nav_title' => 'Footer Page',
-            'footer_nav_title' => 'Footer Page',
+            'meta_title' => 'Impressum',
+            'slug' => 'impressum',
+            'header_nav_title' => 'Impressum',
+            'footer_nav_title' => 'Impressum',
             'footer_nav_active' => true,
-            'h1' => 'Forth Page',
-            'subtitle' => 'A simple and nice Footer Page',
+            'h1' => 'Impressum',
+            'subtitle' => 'Impressum',
             'online' => true,
         ]);
 

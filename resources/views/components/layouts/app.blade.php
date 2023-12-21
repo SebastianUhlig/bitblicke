@@ -13,14 +13,21 @@
 
         @vite(['resources/css/app.scss', 'resources/js/app.js'])
     </head>
-    <body x-cloak x-data="{ darkMode: $persist(false) }" :class="{ 'dark': darkMode === true }" class="antialiased">
-        <div class="bg-dotted-spacing-[3rem] bg-dotted-gray-400/50 dark:bg-dotted-gray-800 min-h-screen bg-gray-100 dark:bg-gray-900 selection:bg-primary-500 selection:text-white text-gray-900 dark:text-gray-200">
-            <livewire:topbar></livewire:topbar>
 
-            <livewire:navigation :logo="true" position="header"></livewire:navigation>
+    <body x-cloak
+          x-data="{ theme: localStorage.getItem('theme') || localStorage.setItem('theme', 'system') }"
+          x-init="$watch('theme', val => localStorage.setItem('theme', val))"
+          x-bind:class="{'dark': theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
+          class="antialiased">
+        <div class="bg-gray-100 dark:bg-[#02174c] selection:bg-primary-500 selection:text-white text-gray-900 dark:text-gray-200">
+            <div class="relative z-20 bg-gray-100 dark:bg-black/70">
+                <livewire:topbar></livewire:topbar>
 
-            <div class="relative">
-                {{ $slot }}
+                <livewire:navigation :logo="true" position="header"></livewire:navigation>
+
+                <div class="relative">
+                    {{ $slot }}
+                </div>
             </div>
 
             <livewire:navigation :logo="true" position="footer"></livewire:navigation>

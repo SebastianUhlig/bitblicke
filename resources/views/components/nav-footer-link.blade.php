@@ -8,7 +8,7 @@
     @if ($active)
         <li>
             <a
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-gray-700 transition hover:text-primary-500 dark:text-white dark:hover:text-primary-500 underline hover:no-underline"
                 href="{{ $link }}"
                 wire:navigate
             >
@@ -18,7 +18,7 @@
     @else
         <li>
             <a
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-gray-700 transition hover:text-primary-500 dark:text-white dark:hover:text-primary-500 underline hover:no-underline"
                 href="{{ $link }}"
                 wire:navigate
             >
@@ -30,7 +30,7 @@
     @if ($active)
         <li>
             <a
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-gray-700 transition hover:text-primary-500 dark:text-white dark:hover:text-primary-500 underline hover:no-underline"
                 href="{{ $link }}"
             >
                 {{ $slot }}
@@ -39,7 +39,7 @@
     @else
         <li>
             <a
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-gray-700 transition hover:text-primary-500 dark:text-white dark:hover:text-primary-500 underline hover:no-underline"
                 href="{{ $link }}"
             >
                 {{ $slot }}

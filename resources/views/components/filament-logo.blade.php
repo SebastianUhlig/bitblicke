@@ -1,10 +1,10 @@
-<a href="{{ route('frontend.page') }}" class="group relative block transition-transform scale-100 hover:scale-105">
+<a href="{{ route('frontend.page') }}" class="group relative h-10 block min-w-[13.5rem] sm:min-w-[25.5rem]">
     <span class="bg-primary-500 inline-block px-2 py-1 text-white rounded-lg relative top-0.5">
-        <svg fill="#ffffff" class="w-6 h-6" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="#ffffff" class="w-5 h-5" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
             <path d="m590.454 251 125.963 104.97-502.979 603.575 502.98 603.575-125.964 104.97L0 959.544 590.454 251Zm738.395 0 590.454 708.545-590.454 708.544-126.073-104.97 503.089-603.574-503.089-603.575L1328.85 251Z" fill-rule="evenodd"/>
         </svg>
     </span>
-    <span class="text-4xl font-normal text-black dark:text-white">bitblicke</span>
+    <span class="text-3xl font-normal text-black dark:text-white">bitblicke</span>
 
     {{--
         <span class="text-2xl sm:text-4xl font-normal uppercase">Sebastian</span>

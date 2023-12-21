@@ -1,4 +1,4 @@
-<div class="z-30 relative py-4 w-full text-gray-700 bg-gray-100 dark:text-gray-200 dark:bg-gray-900">
+<div class="z-30 relative py-4 w-full text-gray-700">
     <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex-grow flex justify-end flex-row items-center">
             @if (Route::has('filament.app.auth.login'))

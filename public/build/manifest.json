@@ -1,0 +1,24 @@
+{
+  "resources/css/app.scss": {
+    "file": "assets/app-dd702f87.css",
+    "isEntry": true,
+    "src": "resources/css/app.scss"
+  },
+  "resources/fonts/poppins/Poppins-Regular.eot": {
+    "file": "assets/Poppins-Regular-243b647a.eot",
+    "src": "resources/fonts/poppins/Poppins-Regular.eot"
+  },
+  "resources/fonts/poppins/Poppins-Regular.svg": {
+    "file": "assets/Poppins-Regular-7b15a862.svg",
+    "src": "resources/fonts/poppins/Poppins-Regular.svg"
+  },
+  "resources/fonts/poppins/Poppins-Regular.ttf": {
+    "file": "assets/Poppins-Regular-d7cc233a.ttf",
+    "src": "resources/fonts/poppins/Poppins-Regular.ttf"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-8a65ddc1.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
