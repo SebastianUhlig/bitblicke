@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
 
       - name: Install composer dependencies
         run: |
@@ -33,9 +35,6 @@ jobs:
           cp .env.ci .env
           php artisan key:generate
           php artisan migrate:fresh --seed
-
-      - name: Clear npm cache
-        run: npm cache clean --force
 
       - name: Install front-end dependencies
         run: |
