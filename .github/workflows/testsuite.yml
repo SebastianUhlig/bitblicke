@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: kirschbaumdevelopment/laravel-test-runner:8.2
-      options: --user root
 
     services:
       mysql:
@@ -23,9 +22,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 1
+        uses: actions/checkout@v4
 
       - name: Install composer dependencies
         run: |
