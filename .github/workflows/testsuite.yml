@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  phpunit:
+  test:
     runs-on: ubuntu-latest
     container:
       image: kirschbaumdevelopment/laravel-test-runner:8.2
@@ -21,9 +21,8 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
     steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
       - name: Install composer dependencies
         run: |
