@@ -4,6 +4,11 @@
     "isEntry": true,
     "src": "resources/css/app.scss"
   },
+  "resources/css/filament/admin/theme.css": {
+    "file": "assets/theme-3238001b.css",
+    "isEntry": true,
+    "src": "resources/css/filament/admin/theme.css"
+  },
   "resources/fonts/poppins/Poppins-Regular.eot": {
     "file": "assets/Poppins-Regular-243b647a.eot",
     "src": "resources/fonts/poppins/Poppins-Regular.eot"
