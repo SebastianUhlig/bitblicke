@@ -70,6 +70,11 @@ class AppPanelProvider extends PanelProvider
             ])
             ->brandLogoHeight('2rem')
             ->brandLogo(fn() => view('components.filament-logo'))
-            ->brandName('bitblicke');
+            ->brandName('bitblicke')
+            ->renderHook(
+                'panels::body.end',
+                fn () => view('admin.footer'),
+            )
+            ->viteTheme('resources/css/filament/admin/theme.css');
     }
 }

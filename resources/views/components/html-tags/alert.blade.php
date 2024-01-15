@@ -14,7 +14,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
@@ -28,7 +27,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
@@ -41,7 +39,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
@@ -55,7 +52,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
@@ -69,7 +65,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
@@ -83,7 +78,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
@@ -97,7 +91,6 @@
                 @if(!empty($title))
                     <span class="font-semibold text-lg block hyphens-auto">{!! $title !!}</span>
                 @endif
-
                 {!! $slot !!}
             </div>
         </div>
