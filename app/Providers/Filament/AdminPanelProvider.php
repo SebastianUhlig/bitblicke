@@ -80,7 +80,6 @@ class AdminPanelProvider extends PanelProvider
             ->brandName('bitblicke')
             ->renderHook(
                 'panels::body.end',
-                // This is the view that will be rendered
                 fn () => view('admin.footer'),
             )
             ->viteTheme('resources/css/filament/admin/theme.css');
