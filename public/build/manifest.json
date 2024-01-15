@@ -1,11 +1,11 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-325264b2.css",
+    "file": "assets/app-392db1bb.css",
     "isEntry": true,
     "src": "resources/css/app.scss"
   },
   "resources/css/filament/admin/theme.css": {
-    "file": "assets/theme-3238001b.css",
+    "file": "assets/theme-82804056.css",
     "isEntry": true,
     "src": "resources/css/filament/admin/theme.css"
   },
@@ -22,7 +22,7 @@
     "src": "resources/fonts/poppins/Poppins-Regular.ttf"
   },
   "resources/js/app.js": {
-    "file": "assets/app-03ea85b9.js",
+    "file": "assets/app-484e6fc3.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
